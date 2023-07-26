@@ -6,7 +6,7 @@ public class EligiblityTest {
 
         int a = 25;
         int x= 18;
-        int y = 30;
+        int y = 35;
 
         if (isEligible(a, x, y)) {
             System.out.println("Chef is eligible to take the exam!");
