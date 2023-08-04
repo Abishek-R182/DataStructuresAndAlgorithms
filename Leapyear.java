@@ -4,7 +4,7 @@ public class Leapyear {
             isleapyear(2016);
         }
         public static boolean isleapyear(int year){
-        if (year <= 1 && year >= 9999){
+        if (year >= 1 && year <= 9999){
             return false;
         }else if (year % 100 == 0){
             if(year % 400 == 0){
