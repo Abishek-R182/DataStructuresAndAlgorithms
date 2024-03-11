@@ -7,7 +7,7 @@ public class BinarySearch {
         while(first<=last){
             int mid =  (first + last )/2;
 
-            //if mid is trarget it it returns mid
+            //if mid is trarget, it returns mid
             if (a[mid] == k){
                 return mid;
             }
