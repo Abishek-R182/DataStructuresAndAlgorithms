@@ -1,16 +1,24 @@
 import java.util.Scanner;
-
+//Iterative
 public class BinarySearch {
     public static int binary(int a[], int k){
         int first = 0;
         int last = a.length - 1;
         while(first<=last){
             int mid =  (first + last )/2;
+
+            //if mid is trarget it it returns mid
             if (a[mid] == k){
                 return mid;
-            }else if (a[mid] < k){
+            }
+                
+            //search on left side
+            else if (a[mid] < k){
                 first = mid + 1;
-            }else{
+            }
+                
+            //search on right side
+            else{
                 last = mid - 1;
             }
         }
