@@ -10,11 +10,14 @@ public class MaximumAverageSubArray {
             // if the end in the loop greater than or equal to k-1 it run below
             // else it stores the value upto index k-1
             if(end>=k-1){
+                //it stores which variable has highest value
                 avgSum = Math.max(avgSum, sum);
+                //removes the start of the element in array
                 sum -= nums[start];
                 start++;
             }
         }
+        
         return (double) avgSum/k;
     }
 
